@@ -27,12 +27,14 @@
   </div>
 </template>
 
+
 <style>
 .about {
   display:inline-flex;
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .me{
     margin:0 50px;
 }
