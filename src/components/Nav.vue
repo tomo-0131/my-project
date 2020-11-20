@@ -38,4 +38,6 @@ export default {
   outline: none;
   color: rgb(83, 83, 83);
 }
+
+
 </style>
