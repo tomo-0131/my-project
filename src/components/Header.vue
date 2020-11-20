@@ -18,25 +18,24 @@ export default {
 </script>
 
 <style>
-.header{
+.header {
   background-color:#ffffff;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
-  opacity: 0.8;
 }
-.header-inner{
+.header-inner {
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
 }
-.title{
+.title {
   padding:20px 0px;
   margin:unset;
   color: rgb(83, 83, 83);
 }
-.nav{
+.nav {
   margin: auto ;
   margin-right: 0;
   padding: auto;
