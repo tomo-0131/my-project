@@ -7,12 +7,12 @@
 <style>
 .footer {
   margin-top: 100px;
-  background-color: rgb(181, 202, 214);
+  background-color: rgb(255, 255, 255);
 }
 
 .title {
   padding: 20px;
-  color: rgb(61, 61, 61);
+  color: rgb(70, 70, 70);
 }
 
 </style>
