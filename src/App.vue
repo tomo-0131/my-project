@@ -8,7 +8,7 @@
         <p class="comment">TOP</p>
       </a>
       <a href="#" class="link-content" @click="clickSmoothScroll('#about')">
-        <font-awesome-icon icon="user-ciecle" class="nav-icon"/>
+        <font-awesome-icon icon="user-circle" class="nav-icon"/>
         <p class="comment">ABOUT</p>
       </a>
       <a href="#" class="link-content" @click="clickSmoothScroll('#skill')">
@@ -24,6 +24,32 @@
         <p class="comment">CONTACT</p>
       </a>
     </div>
+
+    <div id="top">
+      <div id="main">
+      <vue-typer :text="['Hello.\n\n My Name Is Tomoyuki Kumagai.\n \n Thank You For Visiting ! \n\n\n↓\n']" class="top-text" :repeat='0'
+      :preTypeDelay="1000" :typeDelay="120" :preEraseDelay="5000" :eraseDelay="2000"></vue-typer>
+      </div>
+      <vue-particles
+        :particleOpacity="0.7"
+        linesColor="#dedede"
+        :particlesNumber="100"
+        :shapeType="circle"
+        :particleSize="6"
+        :linesWidth="2"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="4"
+        :hoverEffect="true"
+        :hoverMode="grab"
+        :clickEffect="true"
+        :clickMode="push"
+        :retina_detect="true"
+      >
+      </vue-particles>
+    </div>
+
     <About id="about"></About>
     <Skill id="skill"></Skill>
     <Work id="work"></Work>
@@ -75,14 +101,16 @@ export default {
 #app{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  color: #333;
 }
 
 #top{
+  color: rgb(41, 41, 41);
   position: relative;
-  /*background-image: url(./assets/yoru2.jpg);*/
-  background-color:#03111a;
+  background-image: url(./assets/bg.jpg);
+  background-color:#ffffff;
   background-size: cover;
-  height: 100vh;
+  height: 80%;
 }
 
 #main{
@@ -90,25 +118,38 @@ export default {
   top: 30%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+  color:rgb(255, 255, 255)
 }
 
 .particles{
   z-index: 1;
-  height: 100vh;
+  height: 80vh;
+  color: #333;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 70%;
+
+}
+
+.top-texts {
+  z-index: 10;
+  color: #ffffff;
 }
 
 .res{
   display: none;
+  font-size: 30px;
 }
 
 .res-title{
   padding: 10px;
   margin: 0;
-  color: rgb(83, 83, 83);
+  color: rgb(66, 66, 66);
 }
 
 .vue-typer .custom.char{
-  color: aliceblue;
+  color: rgb(255, 255, 255);
 }
 
 .nav-res{
@@ -133,7 +174,7 @@ export default {
   text-align: center;
 }
 .top-text{
-  color: rgb(83, 83, 83);
+  color: rgb(39, 14, 14);
   font-size: 50px;
 }
 .icon{
@@ -152,43 +193,96 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-  .top-text{
-    font-size: 35px;
+  .nav-res {
+    display: none;
+    color: rgb(82, 5, 88);
+  }
+  #main {
+    font-size: 1110px;
+  }
+  .top-text {
+    font-size: 100px;
   }
 }
 
 @media screen and (max-width: 768px){
-  .top-text{
-    font-size: 25px;
+
+  #top{
+    color: rgb(41, 41, 41);
+    position: relative;
+    background-image: url(./assets/bg.jpg);
+    background-color:#ffffff;
+    background-size: cover;
   }
+
+  .vue-typer .custom.char{
+    color: rgb(136, 42, 42);
+    font-size: 10px;
+    margin-top: 120px;
+  }
+
+  .top-text {
+    font-size: 10px;
+    color: aqua;
+  }
+
   #header{
     display: none;
   }
+
   .res{
     display: contents;
-    background-color: #03111a;
+    background-color: #ffffff;
+    font-size: 40px;
   }
+
+  .res-title{
+    background-color: #ffffff;
+    font-size: 60px;
+  }
+
   .nav-res{
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 1;
-  background-color: #03111a;
-  padding: 10px;
+  background-color: #ffffff;
+  margin-top: 45px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.content-title{
-  margin-bottom: 30px;
-}
+  .content-title{
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
+  #top{
+    color: rgb(255, 255, 255);
+    position: relative;
+    background-image: url(./assets/bg.jpg);
+    background-color:#696969;
+    background-size: cover;
+  }
+
   .top-text{
-    font-size: 11px;
+    font-size: 21px;
+  }
+
+  .vue-typer .custom.char{
+  color: rgb(117, 58, 58);
+  font-size: 10px;
+  margin-top: 20px;
+  }
+
+  .res {
+    font-size: 25px;
+    font-weight: 700;
   }
 }
 </style>
