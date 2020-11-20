@@ -12,6 +12,16 @@
           <a href="https://github.com/tomo-0131/CATPIA_v2" class="card-link github-link">GitHub</a>
         </div>
       </li>
+      <li class="card">
+        <img class="card-img" src="../assets/web.png" alt="">
+        <div class="card-content">
+          <h1 class="card-title">自己紹介WEbサイト</h1>
+          <p class="card-text">React.jsにより制作しました。</p>
+          <p class="card-lang">React.js, FirebaseReact.js, Firebase</p>
+          <br>
+          <a href="https://github.com/tomo-0131/CATPIA_v2" class="card-link github-link">GitHub</a>
+        </div>
+      </li>
     </ul>
   </div>
 </template>
