@@ -216,9 +216,8 @@ export default {
   }
 
   .vue-typer .custom.char{
-    color: rgb(136, 42, 42);
+    color: rgb(129, 0, 0);
     font-size: 10px;
-    margin-top: 120px;
   }
 
   .top-text {
@@ -270,14 +269,17 @@ export default {
     background-size: cover;
   }
 
+  #main {
+    margin-top: -1670px;
+  }
+
   .top-text{
     font-size: 21px;
   }
 
   .vue-typer .custom.char{
-  color: rgb(117, 58, 58);
-  font-size: 10px;
-  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
   }
 
   .res {
