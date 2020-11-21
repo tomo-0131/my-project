@@ -279,7 +279,7 @@ export default {
 
   .vue-typer .custom.char{
   color: rgb(255, 255, 255);
-  font-size: 15px;
+  font-size: 12px;
   }
 
   .res {
