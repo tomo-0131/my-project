@@ -3,6 +3,7 @@
     <h1 class="content-title"><font-awesome-icon icon="code" class="icon"/> Skill</h1>
     <div>
       <div class="languages">
+        <h3 class="lang-text">開発で使用した言語等</h3>
         <div class="lang">
           <img src="../assets/lang/html-5.svg" alt="logo" class="lang-image">
           <h3 class="lang-comment">HTML</h3>
@@ -86,6 +87,11 @@
     height: 50px;
     width: 50px;
 }
+
+.lang-text {
+  padding-top: -20px;
+}
+
 </style>
 
 <style>
