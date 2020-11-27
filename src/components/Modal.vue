@@ -25,11 +25,13 @@
             </div>
             <br>
             <br>
-            <v-btn
-              color="secondary"
-              elevation="3"
-              @click="$emit('close')"
-            >CLOSE</v-btn>
+            <div class="close-button">
+              <v-btn
+                color="secondary"
+                elevation="3"
+                @click="$emit('close')"
+              >×</v-btn>
+            </div>
           </div>
         </div>
       </div>
@@ -99,6 +101,10 @@ export default {
             margin: 0 10px;
             color: #333;
           }
+        }
+        .close-button {
+          position: relative;
+          font-size: 35px;
         }
       }
     }
@@ -198,6 +204,10 @@ export default {
             margin: 0 10px;
             color: #333;
           }
+        }
+       .close-button {
+          position: relative;
+          font-size: 35px;
         }
       }
     }

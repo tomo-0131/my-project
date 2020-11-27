@@ -24,7 +24,9 @@
         <p class="comment">CONTACT</p>
       </a>
     </div>
-
+    <v-btn
+      elevation="2"
+    ></v-btn>
     <div id="top">
       <div id="main">
       <vue-typer :text="['Hello.\n\n My Name Is Tomoyuki Kumagai.\n \n Thank You For Visiting ! \n\n↓\n']" class="top-text" :repeat='0'
@@ -54,7 +56,11 @@
     <Skill id="skill"></Skill>
     <Works id="works"></Works>
     <Contact id="contact"></Contact>
-
+    <div class="page_top">
+      <a href="#" v-scroll-to="'body'">
+        TOP
+      </a>
+    </div>
     <Footer></Footer>
   </div>
 </template>
