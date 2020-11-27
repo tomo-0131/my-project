@@ -22,7 +22,7 @@
         </div>
         <div class="lang">
           <img src="../assets/lang/rails.svg" alt="logo" class="lang-image">
-          <h3 class="lang-comment">RubyOnRails</h3>
+          <h3 class="lang-comment">Rails</h3>
         </div>
         <div class="lang">
           <img src="../assets/lang/react.svg" alt="logo" class="lang-image">
@@ -94,16 +94,16 @@
 
 @media screen and (max-width: 768px) {
   .languages{
-      padding-left: 15%;
-      padding-right: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   .lang{
-      margin :10px 30px;
-      display: inline-flex;
-      width: 100px;
+      margin :18px 50px;
+      display: inline-block;
+      width: 20px;
   }
   .lang-comment{
-    width: 100px;
+    margin-left: -25px;
   }
   .lang-image{
     height: 50px;
