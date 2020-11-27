@@ -23,6 +23,13 @@
               <a :href="value.link" target="_blank" class="web-link">Website</a>
               <a :href="value.github" target="_blank" class="github-link">Github</a>
             </div>
+            <br>
+            <br>
+            <v-btn
+              color="secondary"
+              elevation="3"
+              @click="$emit('close')"
+            >CLOSE</v-btn>
           </div>
         </div>
       </div>
