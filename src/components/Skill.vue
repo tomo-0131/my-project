@@ -81,35 +81,38 @@
     width: 100px;
 }
 .lang-comment{
-    width: 100px;
+  width: 100px;
 }
 .lang-image{
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .lang-text {
-  padding-top: -20px;
+  margin-top: -10px;
 }
 
-</style>
-
-<style>
-.languages{
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-.lang{
-    margin :10px 30px;
-    display: inline-block;
+@media screen and (max-width: 768px) {
+  .languages{
+      padding-left: 15%;
+      padding-right: 15%;
+  }
+  .lang{
+      margin :10px 30px;
+      display: inline-flex;
+      width: 100px;
+  }
+  .lang-comment{
     width: 100px;
-}
-.lang-comment{
-    width: 100px;
-}
-.lang-image{
+  }
+  .lang-image{
     height: 50px;
     width: 50px;
+  }
+
+  .lang-text {
+    margin-top: -10px;
+  }
 }
+
 </style>

@@ -12,26 +12,28 @@
             <h3 class="work-description">
               <span>作品説明</span>
             </h3>
+            <br>
             <p class="modal-description">{{ value.description }}</p>
+            <br>
             <br>
             <h3 class="tech-index">
               <span>使用技術</span>
             </h3>
+            <br>
             <p class="modal-tech">{{ value.tech }}</p>
             <br>
+            <br>
             <div class="links">
-              <a :href="value.link" target="_blank" class="web-link">Website</a>
-              <a :href="value.github" target="_blank" class="github-link">Github</a>
+              <a :href="value.link" target="_blank" class="web-link">WebSite</a>
+              <a :href="value.github" target="_blank" class="github-link">GitHub</a>
             </div>
             <br>
             <br>
-            <div class="close-button">
-              <v-btn
-                color="secondary"
-                elevation="3"
-                @click="$emit('close')"
-              >×</v-btn>
-            </div>
+            <v-btn
+              elevation="2"
+              rounded
+              @click="$emit('close')"
+            >CLOSE</v-btn>
           </div>
         </div>
       </div>
@@ -70,8 +72,8 @@ export default {
         }
       }
       .modal-right {
-        padding: 140px;
-        width: 45%;
+        padding: 120px;
+        width: 85%;
         h3 {
           padding: 0 10px;
           position: relative;
@@ -101,10 +103,6 @@ export default {
             margin: 0 10px;
             color: #333;
           }
-        }
-        .close-button {
-          position: relative;
-          font-size: 35px;
         }
       }
     }
@@ -204,10 +202,6 @@ export default {
             margin: 0 10px;
             color: #333;
           }
-        }
-       .close-button {
-          position: relative;
-          font-size: 35px;
         }
       }
     }
