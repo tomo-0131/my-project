@@ -15,7 +15,7 @@
         <font-awesome-icon icon="code" class="nav-icon"/>
         <p class="comment">SKILL</p>
       </a>
-      <a href="#" class="link-content" @click="clickSmoothScroll('#work')">
+      <a href="#" class="link-content" @click="clickSmoothScroll('#works')">
         <font-awesome-icon icon="hammer" class="nav-icon"/>
         <p class="comment">WORKS</p>
       </a>
@@ -52,7 +52,7 @@
 
     <About id="about"></About>
     <Skill id="skill"></Skill>
-    <Work id="work"></Work>
+    <Works id="works"></Works>
     <Contact id="contact"></Contact>
 
     <Footer></Footer>
@@ -65,7 +65,7 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import About from './components/About.vue'
 import Skill from './components/Skill.vue'
-import Work from './components/Work.vue'
+import Works from './components/Works.vue'
 import Contact from './components/Contact.vue'
 
 import 'normalize.css'
@@ -77,7 +77,7 @@ export default {
     Footer,
     About,
     Skill,
-    Work,
+    Works,
     Contact
   },
   methods: {
