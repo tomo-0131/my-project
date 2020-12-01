@@ -1,6 +1,9 @@
 <template>
-  <div>
+  <div class="contact">
     <h1 class="content-title"><font-awesome-icon icon="handshake" class="icon"/> CONTACT </h1>
+    <div>
+        <img src="../assets/Contact us.gif" alt="logo" class="skills-image">
+    </div>
       <div class="link">
         <a href="https://twitter.com/tk_engineers" class="link-icon"><font-awesome-icon :icon="['fab','twitter']" class="web-icon twitter"/></a>
         <a href="mailto:tmyk.engineer@gmail.com" class="link-icon"><font-awesome-icon icon="envelope" class="web-icon mail"/></a>
@@ -57,6 +60,12 @@
     background-color: #193278;
 }
 @media screen and (max-width: 768px){
+    .contact {
+        margin-top: -130px;
+    }
+    .content-title {
+        margin-top: -300px;
+    }
     .web-icon{
         color:white;
     }
