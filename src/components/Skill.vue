@@ -2,6 +2,7 @@
   <div>
     <h1 class="content-title"><font-awesome-icon icon="code" class="icon"/> Skill</h1>
     <div>
+      <img src="../assets/skills.svg" alt="logo" class="skills-image">
       <div class="languages">
         <h3 class="lang-text">開発で使用した言語等</h3>
         <div class="lang">
@@ -92,6 +93,11 @@
   margin-top: -10px;
 }
 
+.skills-image {
+  height: 300px;
+  margin-top: -70px;
+}
+
 @media screen and (max-width: 768px) {
   .languages{
     padding-left: 15%;
@@ -112,6 +118,10 @@
 
   .lang-text {
     margin-top: -10px;
+  }
+  .skills-image {
+  height: 300px;
+  margin-top: 10px;
   }
 }
 
