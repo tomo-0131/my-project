@@ -27,7 +27,7 @@
 
     <div id="top">
       <div id="main">
-      <vue-typer :text="['Hello.\n\n Thank You For Visiting !']" class="top-text" :repeat='0'
+      <vue-typer :text="['\n\n Thank You For Visiting !']" class="top-text" :repeat='0'
       :preTypeDelay="1000" :typeDelay="120" :preEraseDelay="5000" :eraseDelay="2000"></vue-typer>
       </div>
       <vue-particles
@@ -111,10 +111,10 @@ export default {
 #top{
   color: rgb(41, 41, 41);
   position: relative;
-  background-image: url(./assets/bg.jpg);
+  background-image: url(./assets/bg.svg);
   background-color:#ffffff;
   background-size: cover;
-  height: 80%;
+  height: 70%;
 }
 
 #main{
@@ -179,7 +179,7 @@ export default {
 }
 .top-text{
   color: rgb(39, 14, 14);
-  font-size: 50px;
+  font-size: 40px;
 }
 .icon{
   font-size: 0.8em;
@@ -214,7 +214,7 @@ export default {
   #top{
     color: rgb(41, 41, 41);
     position: relative;
-    background-image: url(./assets/bg.jpg);
+    background-image: url(./assets/bg.svg);
     background-color:#ffffff;
     background-size: cover;
   }
@@ -268,8 +268,8 @@ export default {
   #top{
     color: rgb(255, 255, 255);
     position: relative;
-    background-image: url(./assets/bg.jpg);
-    background-color:#696969;
+    background-image: url(./assets/bg.svg);
+    background-color:#63adca;
     background-size: cover;
   }
 
@@ -277,14 +277,6 @@ export default {
     margin-top: -1670px;
   }
 
-  .top-text{
-    font-size: 21px;
-  }
-
-  .vue-typer .custom.char{
-  color: rgb(255, 255, 255);
-  font-size: 12px;
-  }
 
   .res {
     font-size: 25px;
