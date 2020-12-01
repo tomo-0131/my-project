@@ -27,8 +27,6 @@
 
     <div id="top">
       <div id="main">
-      <vue-typer :text="['\n\n Thank You For Visiting !']" class="top-text" :repeat='0'
-      :preTypeDelay="1000" :typeDelay="120" :preEraseDelay="5000" :eraseDelay="2000"></vue-typer>
       </div>
       <vue-particles
         :particleOpacity="0.7"
@@ -54,6 +52,8 @@
     <Skill id="skill"></Skill>
     <Works id="works"></Works>
     <Contact id="contact"></Contact>
+    <br>
+    <br>
     <div class="page_top">
       <a href="#" v-scroll-to="'body'">
         TOP
@@ -112,14 +112,15 @@ export default {
   color: rgb(41, 41, 41);
   position: relative;
   background-image: url(./assets/bg.svg);
-  background-color:#ffffff;
+  background-color:#63adca;
   background-size: cover;
-  height: 70%;
+  height: 80%;
+
 }
 
 #main{
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   color:rgb(255, 255, 255)
@@ -136,9 +137,10 @@ export default {
 
 }
 
-.top-texts {
+.top-text {
   z-index: 10;
   color: #ffffff;
+  margin-top: 20px;
 }
 
 .res{
@@ -153,7 +155,9 @@ export default {
 }
 
 .vue-typer .custom.char{
-  color: rgb(255, 255, 255);
+  color: rgb(102, 102, 102);
+  margin-top: px;
+  font-size: 35px;;
 }
 
 .nav-res{
@@ -194,6 +198,10 @@ export default {
   font-size: 2em;
   color: #333;
   border-bottom: rgba(12, 50, 78, 0.4) 3px solid;
+}
+
+.page_top {
+  color: black;
 }
 
 @media screen and (max-width: 1200px) {
@@ -277,6 +285,15 @@ export default {
     margin-top: -1670px;
   }
 
+
+  .vue-typer .custom.char{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  }
+
+  .top-text {
+
+  }
 
   .res {
     font-size: 25px;
