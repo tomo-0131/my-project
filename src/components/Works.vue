@@ -1,6 +1,9 @@
 <template>
   <div class="works">
     <h1 class="content-title"><font-awesome-icon icon="hammer" class="icon"/> WORKS</h1>
+    <div>
+      <img src="../assets/work.svg" alt="logo" class="work-image">
+    </div>
     <div class="works-container">
       <div class="card">
         <ul>
@@ -66,8 +69,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .works {
-  margin: 160px auto;
+  .work-image {
+    height: 300px;
+    margin-top: -70px;
+  }
+
   .works-container {
     display: inline-block;
     margin: auto;
@@ -100,6 +108,10 @@ export default {
 @media screen and (max-width: 768px){
 .works {
   margin: -12px auto;
+  .work-image {
+    height: 300px;
+    margin-top: -10px;
+  }
   .works-container {
     display: inline-block;
     margin: 1px auto;
